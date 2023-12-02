@@ -1,0 +1,28 @@
+ist1= [ ]
+number_of_elements=int(input("enter number of elements in a list"))
+for each_value in range(number_of_elements):
+    elements=eval(input("Enter elements"))
+    list1.append(elements)
+print(list1)
+EXPLAIN OF THE CODE
+
+1)list1 = []: Initializes an empty list named list1.
+
+2) number_of_elements = int(input("enter number of elements in a list")): Prompts the user to enter the number of elements they want in the list. The input function takes user input as a string, and int() is used to convert it into an integer.
+
+3)for each_value in range(number_of_elements):: Initiates a for loop that iterates as many times as the number entered by the user. The loop variable each_value is not used within the loop, but it's used to control the loop iteration based on the specified range.
+
+elements = eval(input("Enter elements")): Prompts the user to enter an element for the list and uses eval() to evaluate the entered input. The use of eval() is generally discouraged due to security reasons, as it can execute arbitrary code. In this case, it might be safer to use int() or float() instead, depending on the type of elements you expect in the list.
+
+4)list1.append(elements): Adds the entered element to the list using the append() method.
+
+5)The loop repeats until the specified number of elements are entered by the user.
+
+6)print(list1): Finally, prints the complete list containing the entered elements.
+
+In summary, this code allows the user to input a specified number of elements, and these elements are added to a list, which is then printed. Note that using eval() can be risky, especially if the input is not controlled, as it may execute arbitrary code. 
+It's generally safer to use specific conversion functions like int() or float() depending on the expected data type.
+
+
+
+
